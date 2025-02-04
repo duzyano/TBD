@@ -7,16 +7,17 @@
     <title>Love Tester</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-<style>
-    body{
-        font-family: Arial, sans-serif;
-        background-color: lightpink;
-        color: lavenderblush;
-        margin: 0;
-        padding: 0;
-        text-align:center;
-    }
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightpink;
+            color: black;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
 
+<<<<<<< HEAD
     #Lovetester{
         position: absolute;
         top: 10px;
@@ -26,39 +27,52 @@
         font-weight: bold;
         font-family:'DreamingOutloud';
     }
+=======
+        #Lovetester {
+            margin-top: 20px;
+            font-size: 60px;
+            font-weight: bold;
+            color: lavenderblush;
+        }
+>>>>>>> 9be4b9ff51240fe8dc2563d5922db1dfeeb9eec2
 
-    .inputName{
-        position:absolute;
-        top: 500px;
-        left: 500px;
+        #cupido {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+        }
 
-        border: solid 2px #333;
-        padding: 5px;
-        font-size: 16px;
-        width: 250px;
-        margin: 10px auto;
-        display: flex;
-        justify-content: right;
-    }
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 520px;
+            
+        }
 
-    .versturen{
-        position:absolute;
-        top: 550px;
-        left: 750px;
+        .inputName {
+            border: solid 2px #333;
+            padding: 10px;
+            font-size: 16px;
+            width: 200px;
+            text-align: center;
+        }
 
-        background-color: lightseagreen;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        font-size: 18px;
-        cursor: pointer;
-        border-radius: 5px;
-    }
+        .versturen {
+            background-color: lightseagreen;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
 
-    .versturen:hover{
-        background-color: #ff1a4d;
-    }
+        .versturen:hover {
+            background-color: #ff1a4d;
+        }
 
+<<<<<<< HEAD
     .message{
         top: 50%;
         left: 50%;
@@ -92,6 +106,9 @@
 }
 
 </style>
+=======
+    </style>
+>>>>>>> 9be4b9ff51240fe8dc2563d5922db1dfeeb9eec2
 
 </head>
 
@@ -103,12 +120,22 @@
     <img src="cupido.png" id="cupido" class="animate__animated animate__pulse animate__infinite infinite">
 
     <form action="" method="post">
-        <input class="inputName" type="text" placeholder="..vul hier je naam in" name="naam">
-        <br>
-        <input class="versturen" type="submit" value="Send">
+        <div class="form-container">
+            <input class="inputName" type="text" placeholder="Naam 1" name="naam1">
+            <input class="inputName" type="text" placeholder="Naam 2" name="naam2">
+            <input class="versturen" type="submit" value="Send">
+        </div>
     </form>
 
+<<<<<<< HEAD
     <button id="knop" type="button">🎵</button>
+=======
+   
+    <audio id="loveSong">
+        <source src="careless_whispers.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+>>>>>>> 9be4b9ff51240fe8dc2563d5922db1dfeeb9eec2
 </body>
 
 </html>
