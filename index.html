@@ -24,6 +24,7 @@
         transform: translateX(-50%);
         font-size: 60px;
         font-weight: bold;
+        font-family:'DreamingOutloud';
     }
 
     .inputName{
@@ -58,7 +59,6 @@
         background-color: #ff1a4d;
     }
 
-
     .message{
         top: 50%;
         left: 50%;
@@ -71,14 +71,34 @@
         position:absolute;
         top: 5px;
         left: 5px;
+    } 
+
+    #knop{
+        position:absolute;
+        top:5px;
+        left:1480px;
+
+        width: 50px;
+        height: 50px;
+
+        color:lavenderblush;
     }
+
+    @font-face {
+    font-family: 'DreamingOutloud';
+    src: url('fonts/dreaming-outloud-allcaps-regular-maisfontes.0021/dreaming-outloud-allcaps-regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 </style>
 
 </head>
 
 <body>
-
     <span id="Lovetester">Love Tester</span>
+
+    <source src="George Michael - Careless Whisper (Official Video).m4a">
 
     <img src="cupido.png" id="cupido" class="animate__animated animate__pulse animate__infinite infinite">
 
@@ -88,6 +108,7 @@
         <input class="versturen" type="submit" value="Send">
     </form>
 
+    <button id="knop" type="button">🎵</button>
 </body>
 
 </html>
