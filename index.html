@@ -5,18 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Love Tester</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="George Michael - Careless Whisper (Instrumental - Official Audio).m4a"></script>
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: lightpink;
-            color: black;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            box-sizing: border-box;
-        }
+    body {
+        font-family: Arial, sans-serif;
+        background-color: lightpink;
+        color: black;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        box-sizing: border-box;
+    }
 
     #Lovetester{
         position: absolute;
@@ -32,48 +33,41 @@
         font-weight: bold;
         color: lavenderblush;
     }
-        #Lovetester {
-            margin-top: 20px;
-            font-size: 60px;
-            font-weight: bold;
-            color: lavenderblush;
-        }
 
-        #cupido {
-            position: absolute;
-            top: 5px;
-            left: 5px;
-        }
+    #cupido {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
 
-        .form-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 520px;
-            
-        }
+    .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 520px;
+    }
 
-        .inputName {
-            border: solid 2px #333;
-            padding: 10px;
-            font-size: 16px;
-            width: 200px;
-            text-align: center;
-        }
+    .inputName {
+        border: solid 2px #333;
+        padding: 10px;
+        font-size: 16px;
+        width: 200px;
+        text-align: center;
+    }
 
-        .versturen {
-            background-color: lightseagreen;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 18px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
+    .versturen {
+        background-color: lightseagreen;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
 
-        .versturen:hover {
-            background-color: #ff1a4d;
-        }
+    .versturen:hover {
+        background-color: #ff1a4d;
+    }
 
     .message{
         top: 50%;
@@ -96,73 +90,10 @@
 
         width: 50px;
         height: 50px;
+        border-radius:5px;
 
-        color:lavenderblush;
-    }
-
-    .heart{
-        position:absolute;
-        width: 100px;
-        height: 90px;
-        animation: 2s float infinite ease-in-out;
-    }
-    .heart:before,
-    .heart:after{
-    position: absolute;
-    content:'';
-    left: 50px;
-    width: 50px;
-    height: 80px;
-    border-radius: 50px 50px 0 0;
-    transform: rotate(-45deg);
-    transform-origin: 0 100%;
-    }
-    .heart:after{
-        left: 0;
-        transform: rotate(45deg);
-        transform-origin: 100% 100%;
-    }
-    .heart:nth-child(1){
-        transform: scale(1);
-        animation: 2s pulsate infinite ease-in-out
-    }
-    .heart:nth-child(2){
-        animation-delay: 1s;
-    }
-    .heart:nth-child(3){
-        animation-delay: 1.4s;
-    }
-    .heart:nth-child(4){
-        animation-delay: 1.8s;
-    }
-    .heart:nth-child(5){
-        animation-delay: 2.2s;
-    }
-    .heart:nth-child(6){
-        animation-delay: 2.6s;
-    }
-
-    @keyframes pulsate{
-        0%{
-            transform: scale(1);
-        }
-        50%{
-            transform: scale(1.3);
-        }
-        100%{
-            transform: scale(1);
-        }
-    }
-
-    @keyframes float{
-        from{
-            transform: translateY(0px) scale(0.7) rotate(0deg);
-            opacity: 0.6;
-        }
-        to {
-            transform: translateY(-250px) scale(0.3) rotate(360deg);
-            opacity: 0;
-        }
+        background-color: lightpink;
+        border: 3px solid lavenderblush;
     }
 
     @font-face {
@@ -170,16 +101,16 @@
     src: url('fonts/dreaming-outloud-allcaps-regular-maisfontes.0021/dreaming-outloud-allcaps-regular.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
+    }
 
     </style>
-
 </head>
-
 <body>
     <span id="Lovetester">Love Tester</span>
 
     <img src="cupido.png" id="cupido" class="animate__animated animate__pulse animate__infinite infinite">
+
+    <button id="knop" type="button">🎵</button>
 
     <form action="" method="post">
         <div class="form-container">
@@ -196,4 +127,11 @@
     <div class="heart"></div>
     <div class="heart"></div>
 </body>
+
+<script>
+    function preload(){
+  backgroundsound = loadSound("George Michael - Careless Whisper (Instrumental - Official Audio).m4a")
+}
+
+</script>
 </html>
