@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Love Tester</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <script src="George Michael - Careless Whisper (Instrumental - Official Audio).m4a"></script>
+    <script src="George Michael - Careless Whisper (Instrumental - Official Audio).mp3"></script>
 
     <style>
     body {
@@ -91,12 +91,20 @@
     font-style: normal;
     }
 
+    .audioControls{
+        position:absolute;
+        top: 5px;
+        right: 5px;
+    }
+
     </style>
 </head>
 <body>
     <span id="Lovetester">Love Tester</span>
 
     <img src="cupido.png" id="cupido" class="animate__animated animate__pulse animate__infinite infinite">
+
+
 
     <form action="" method="post">
         <div class="form-container">
@@ -105,11 +113,9 @@
             <input class="versturen" type="submit" value="Send">
         </div>
     </form>
-</body>
 
-<script>
-    function preload(){
-  backgroundsound = loadSound("George Michael - Careless Whisper (Instrumental - Official Audio).m4a")
-}
-</script>
+    <audio class="audioControls" controls autoplay>
+        <source src="George Michael - Careless Whisper (Instrumental - Official Audio).mp3" type="audio/ogg">
+    </audio>
+</body>
 </html>
