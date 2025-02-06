@@ -1,6 +1,5 @@
 const createBubble = () => {
-    const bubble = document.createElement
-    ('div');
+    const bubble = document.createElement('div');
     bubble.classList.add('bubble');
     const size = Math.random() * 20 + 10 + 'px';
     bubble.style.width = size;
